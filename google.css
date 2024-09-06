@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+}
+body {
+    margin-top: 0%;
+    margin-right: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+   
+}
+
+.menu-container {
+    display: flex;
+    max-width: 400rem;
+    height: 50px;
+    margin-bottom: 220px;
+    justify-content: flex-end;
+    
+
+}
+.gmail:hover{
+    text-decoration: underline;
+}
+.imagem:hover{
+    text-decoration: underline; 
+}
+
+.itens-nav {
+    display: flex; /* Garante que os links e a foto de perfil fiquem em linha */
+    align-items: center; /* Centraliza verticalmente os itens dentro da .itens-nav */
+    line-height: 50px; /* Garante que a linha seja a mesma altura do contêiner */
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.itens-nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.perfil {
+    width: 30px; /* Ajuste o tamanho da foto de perfil */
+    height: 30px; /* Ajuste a altura para corresponder ao tamanho */
+    cursor: pointer;
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+    
+
+
+}
+
+.input{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border: rgb(255, 255, 255) solid 1px;
+    height: 30px;
+    padding: 8px 2px;
+    border-radius: 10px;
+    outline: none;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: -10px;
+    max-width: 560px;
+   
+}
+
+
+.cont-botao{
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+.pesquisa{
+    margin-right: 20px;
+    width: 155px;
+    height: 40px;
+    border-radius: 5px;
+    border: lightgray;
+    background-color: rgb(241, 237, 237);
+    
+}
+.pesquisa:hover{
+    box-shadow: 3px 3px 3px 3px #ddd;
+}
+.estou{
+    width: 155px;
+    height: 40px;
+    border-radius: 5px;
+    border: lightgray;
+    background-color: rgb(241, 237, 237);
+}
+.estou:hover{
+    box-shadow: 3px 3px 3px 3px #ddd;
+}
+.container-input{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(122, 121, 121);
+    height: 25px;
+    padding: 13px 35px;
+    border-radius: 90px;
+    outline: none;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 3px;
+    max-width: 560px;
+
+}
+
+.icons{
+    display: flex;
+}
+.container-input:hover{
+    box-shadow:3px 3px 3px 3px #ddd; 
+}
+.voz{
+    margin-right: 10px;
+}
+
+
+.passarinho {
+    position: absolute; /* Permite que o passarinho se mova pela tela */
+    top: 50px; /* Altura inicial */
+    left: -100px; /* Começa fora da tela, à esquerda */
+    width: 70px; /* Tamanho do passarinho */
+    animation: voar 15s infinite linear; /* Animação contínua */
+}
+
+/* Definindo a animação */
+@keyframes voar {
+    0% {
+        left: -100px; /* Começa fora da tela */
+    }
+    100% {
+        left: 100vw; /* Voa até o fim da tela */
+    }
+}
+
+.footer {
+    background-color: #f2f2f2; /* Cor de fundo do rodapé */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Garante que o rodapé fique na parte inferior da página */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os links quebrem em múltiplas linhas se necessário */
+    justify-content: center; /* Centraliza os links horizontalmente */
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+.footer-content a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #1a73e8; /* Cor dos links */
+    font-size: 14px; /* Tamanho da fonte dos links */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer-info {
+    margin-top: 10px; /* Espaço entre os links e as informações adicionais */
+    font-size: 12px; /* Tamanho da fonte das informações adicionais */
+    color: #606060; /* Cor do texto das informações adicionais */
+}
+
+
